@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: cornflowerblue;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU1j-4tOhrKPesCwpeH9C1spfCZTgnPlB9sQ&s");
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-attachment: fixed;
+      }
+      #grad1 {
+        height: 200px;
+        background-color: red;
+        background-image: linear-gradient(
+          to top right,
+          red,
+          orange,
+          yellow,
+          green,
+          blue,
+          indigo,
+          violet
+        );
+        text-align: center;
+        margin-top: 180px;
+        color: coral;
+        font-size: 40px;
+        font-weight: bold;
+      }
+      @keyframes diddy {
+        0% {
+          background-color: red;
+        }
+        25% {
+          background-color: yellow;
+        }
+        50% {
+          background-color: blue;
+        }
+        100% {
+          background-color: green;
+        }
+      }
+      .animation {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-name: diddy;
+        animation-duration: 8s;
+      }
+    </style>
+  </head>
+  <body>
+    Hello World
+    <div id="grad1">Welcome to Codingal</div>
+    <div class="animation">Hi</div>
+  </body>
+</html>
